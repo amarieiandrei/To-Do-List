@@ -8,20 +8,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="businessLogic.js" defer></script>
     </head>
     <body>
         <div class="Container">
-            <section class="ToDoList">
-                <h3>To-Do List</h3>
+            <header>Maliakademy</header>
+            <main>
+                <section class="DescBox">
+                    <h3 class="DescTitle">Description</h3>
+                    <p class="DescContent">
+                        <span class="SpanTitle">What is a ToDo List?</span><br>
+                    <p class="Text">It’s a list of tasks you need to complete or things that you want to do.</p>
+                    </p>
+                    <br>
+                    <p class="DescContent">
+                        <span class="SpanTitle">The Benefits of Using a To Do List</span><br>
+                        <p class="Text">One of the most important reasons you should use a to do list is that it will help you stay organised. When you write all your tasks in a list, they seem more manageable. When you’ve got a clear outline of the tasks you’ve got to do and those you’ve completed, it helps you stay focused. While freeing up space in your mind for other more creative tasks.</p>
+                    </p>
+                </section>
 
-                <div class="InputDisplayFlex">
-                    <input id="input-task" placeholder="A task to do ..." />
-                    <button id="add-task-button">Add a task</button>
-                </div>
-                <ul id="task-list"></ul>
-            </section>
+                <section class="ToDoList">
+                    <h3>To-Do List</h3>
+
+                    <div class="InputDisplayFlex">
+                        <input id="input-task" placeholder="What bothers you and want to fix it?" />
+                        <button id="add-task-button" class="AddButton">Add a task</button>
+                    </div>
+                    <ul id="task-list"></ul>
+                </section>
+            </main>
+            <footer>© Andrei Amariei, All Rights Reserved</footer>
         </div>
     </body>
 </html>
